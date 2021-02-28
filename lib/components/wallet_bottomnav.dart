@@ -2,6 +2,8 @@ import 'package:drdp/config/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'wallet_add_accounts.dart';
+
 class WalletBottomNavigation extends StatefulWidget {
   @override
   _WalletBottomNavigationState createState() => _WalletBottomNavigationState();
@@ -41,6 +43,14 @@ class _WalletBottomNavigationState extends State<WalletBottomNavigation> {
           _selectedIndex = index;
         });
         break;
+      case 2:
+        print('NotificationList::=== $index');
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => NotificationList(),
+        //   ),
+        // );
+        break;
       case 3:
         print('NotificationList::=== $index');
         // Navigator.of(context).push(
@@ -51,11 +61,12 @@ class _WalletBottomNavigationState extends State<WalletBottomNavigation> {
         break;
       case 4:
         print('Account::::==== $index');
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => ProfilePage(),
-        //   ),
-        // );
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => WalletAddAccountContainer(),
+          ),
+        );
         setState(() {
           _selectedIndex = index;
         });
@@ -72,10 +83,10 @@ class _WalletBottomNavigationState extends State<WalletBottomNavigation> {
         color: Colors.indigoAccent,
         boxShadow: AppColors.neumorpShadow,
         gradient: LinearGradient(
-              colors: AppColors.gradienColors,
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
+          colors: AppColors.gradienColors,
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
       ),
       child: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
@@ -91,7 +102,10 @@ class _WalletBottomNavigationState extends State<WalletBottomNavigation> {
                 : Icon(Icons.vibration),
             label: 'Card List',
           ),
-          
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add, color: Colors.purple,),
+            label: '',
+          ),
           BottomNavigationBarItem(
             icon: _selectedIndex == 3
                 ? new Icon(Icons.notification_important)
@@ -106,7 +120,6 @@ class _WalletBottomNavigationState extends State<WalletBottomNavigation> {
           ),
         ],
         elevation: 0.0,
-       
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.white,

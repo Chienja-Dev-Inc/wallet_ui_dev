@@ -1,9 +1,10 @@
-import 'package:drdp/components/appbar.dart';
+import 'package:drdp/components/utils/wallet_custome_nabar_with_two_icon.dart';
 import 'package:drdp/components/wallet_account.dart';
 import 'package:drdp/components/wallet_balance_container.dart';
 import 'package:drdp/components/wallet_bottomnav.dart';
 import 'package:drdp/components/wallet_cashout_send_cash.dart';
 import 'package:drdp/components/wallet_chart.dart';
+import 'package:drdp/components/wallet_drawer_bar.dart';
 import 'package:drdp/config/colors.dart';
 import 'package:drdp/config/size.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,18 @@ class WalletDashBoard extends StatelessWidget {
                 Container(
                   height: height / 13,
                   width: width,
-                  child: CustomAppBar(),
+                  child: WalletCustomAppBarWithTwoIcon(
+                    title: 'My Wallet',
+                    icon1: Icon(Icons.notifications_on_outlined, color: Colors.white),
+                    icon2: Icon(Icons.search_outlined, color: Colors.white,),
+                    isWithMenu: true,
+                    onTapMenu: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => WalletSideBar(),
+                      ),
+                    ),
+                  ),
                 ),
                 SizedBox(height: 20),
                 Container(

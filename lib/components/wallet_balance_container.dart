@@ -42,7 +42,7 @@ class WalletBalanceContainer extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 child: Text(
-                  "Taday, ${time.day} " +
+                  "Today, ${time.day} " +
                       FormateDateTime.getMonthInt(time.month),
                   style: AppColors.kFontStyle,
                 ),

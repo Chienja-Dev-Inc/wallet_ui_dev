@@ -39,6 +39,12 @@ class AppColors {
     Colors.purple[900],
     Colors.purple[600],
   ];
+  static List<Color> gradienTInTabsColors = [
+    Colors.purple[900],
+    Colors.purple[800],
+    Colors.purple[700],
+    Colors.purple[600],
+  ];
   static List<Color> gradienAppBarColors = [
     Colors.indigo[900],
     Colors.purple[900],

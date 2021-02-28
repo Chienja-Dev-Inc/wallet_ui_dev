@@ -33,6 +33,9 @@ dependencies:
   url_launcher:
   fl_chart: ^0.12.2
   simple_animations: ^2.5.0
+  credit_card_slider: ^1.0.1
+  flutter_swiper: ^1.1.6
+  
 
 dev_dependencies:
   flutter_test:
