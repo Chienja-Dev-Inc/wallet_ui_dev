@@ -5,6 +5,7 @@ import 'package:drdp/config/size.dart';
 import 'package:drdp/utility/date_time_utility.dart';
 import 'package:flutter/material.dart';
 
+import 'settings/wallet_user_profile.dart';
 import 'utils/wallet_custome_navbar.dart';
 import 'wallet_bottomnav.dart';
 import 'wallet_drawer_bar.dart';
@@ -36,7 +37,10 @@ class WalletAddAccountContainer extends StatelessWidget {
                   height: height / 13,
                   width: width,
                   child: WalletCustomAppBar(
-                    onTapMenu: () => Navigator.push(context,MaterialPageRoute(builder: (context) => WalletSideBar())),
+                    onTapMenu: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => WalletSideBar())),
                     title: 'Accounts',
                     icon: Icon(
                       Icons.add,
@@ -106,9 +110,17 @@ class WalletAddAccountContainer extends StatelessWidget {
                       Positioned(
                         right: width / 15,
                         top: width / 20,
-                        child: Icon(
-                          Icons.settings,
-                          color: Colors.white,
+                        child: InkWell(
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => WalletUserProfile(),
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.settings,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ],
@@ -122,11 +134,11 @@ class WalletAddAccountContainer extends StatelessWidget {
                   width: width,
                   child: WalletAccountListContainer(),
                 ),
-                 SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 Container(
-                  height: height /1.5,
+                  height: height / 1.5,
                   width: width,
                   child: WalletAccountExtensionsContainer(),
                 ),

@@ -3,12 +3,15 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
   static Color primaryWhite = Color(0xFFCADCED);
+  static Color successColor = Colors.green[700];
   
   // static Color primaryWhite = Colors.indigo[100];
   static EdgeInsets navPading = EdgeInsets.fromLTRB(70.0, 10, 70, 10);
   static EdgeInsets addFundPading = EdgeInsets.fromLTRB(40.0, 10, 70, 0);
   static EdgeInsets addRulePading = EdgeInsets.fromLTRB(40.0, 20, 280, 10);
   static EdgeInsets navPadingDivider = EdgeInsets.fromLTRB(70.0, 25, 70, 25);
+  static EdgeInsets navThinPadingDivider = EdgeInsets.fromLTRB(70.0, 15, 70, 15);
+  static EdgeInsets profilePading = EdgeInsets.fromLTRB(25.0, 5, 25, 10);
   static EdgeInsets addFundPadingDivider = EdgeInsets.fromLTRB(40.0, 10, 40, 0);
   // static EdgeInsets navPading2 = EdgeInsets.fromLTRB(10.0, 60, 70, 10);
   static List pieColors = [
@@ -22,6 +25,7 @@ class AppColors {
   static TextStyle kFontNavStyle = GoogleFonts.getFont('Roboto Mono',color: Colors.white, fontWeight: FontWeight.w600, fontSize: 17);
   static TextStyle kFontStyle = GoogleFonts.getFont('Roboto Mono',color: Colors.white, fontWeight: FontWeight.w200, fontSize: 17);
   static TextStyle kAddFundSubFontStyle = GoogleFonts.getFont('Roboto Mono',color: Colors.white, fontWeight: FontWeight.w200, fontSize: 12);
+  static TextStyle kProfileFontStyle = GoogleFonts.getFont('Roboto Mono',color: Colors.white, fontWeight: FontWeight.w200, fontSize: 15);
   static TextStyle kAddFundFontStyle = GoogleFonts.getFont('Merriweather',color: Colors.white, fontWeight: FontWeight.w300, fontSize: 15);
   static TextStyle kFontDollarStyle = GoogleFonts.getFont('Poppins',
       color: Colors.white, fontWeight: FontWeight.w200, fontSize: 17);
@@ -31,8 +35,8 @@ class AppColors {
       color: Colors.blueGrey, fontWeight: FontWeight.bold, fontSize: 50);
   static TextStyle kFontBalanceFigStyle = GoogleFonts.getFont('Merriweather',
       color: Colors.white, fontWeight: FontWeight.w100, fontSize: 45);
-  static TextStyle kFontAccountFigStyle = GoogleFonts.getFont('Merriweather',
-      color: Colors.white, fontWeight: FontWeight.w100, fontSize: 25);
+  static TextStyle kFontAccountFigStyle = GoogleFonts.getFont('Merriweather',color: Colors.white, fontWeight: FontWeight.w100, fontSize: 25);
+  static TextStyle kEmailProfileFontAccountFigStyle = GoogleFonts.getFont('Merriweather',color: Colors.white, fontWeight: FontWeight.w100, fontSize: 18);
   static List<Color> gradienColors = [
     Colors.indigo[400],
     Colors.indigo[900],
