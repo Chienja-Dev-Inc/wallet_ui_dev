@@ -48,7 +48,7 @@ class WalletAccountExtensionsContainer extends StatelessWidget {
                 isTrailing: true,
                 isImage: true,
                 isText: false,
-                subtitle: '\$28/Month',
+                subtitle: 'Ksh 28/Month',
                 title: 'Shazam',
                 onPressed: () {},
                 icon2: Icon(
@@ -68,7 +68,7 @@ class WalletAccountExtensionsContainer extends StatelessWidget {
                 isTrailing: true,
                 isImage: true,
                 isText: false,
-                subtitle: '\$38/Month',
+                subtitle: 'Ksh 38/Month',
                 title: 'Apple Music',
                 onPressed: () {},
                 icon2: Icon(
@@ -89,7 +89,7 @@ class WalletAccountExtensionsContainer extends StatelessWidget {
                 isTrailing: true,
                 isImage: true,
                 isText: false,
-                subtitle: '\$20/Month',
+                subtitle: 'Ksh 20/Month',
                 title: 'Spotify',
                 onPressed: () {},
                 icon2: Icon(
@@ -110,7 +110,7 @@ class WalletAccountExtensionsContainer extends StatelessWidget {
                 isTrailing: true,
                 isImage: true,
                 isText: false,
-                subtitle: '\$29/Month',
+                subtitle: 'Ksh 29/Month',
                 title: 'HBO',
                 onPressed: () {},
                 icon2: Icon(

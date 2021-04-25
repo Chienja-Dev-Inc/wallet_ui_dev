@@ -17,11 +17,26 @@ class WalletAccountContainer extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             children: [
               SizedBox(width: 10),
-              Accounts(),
+              Accounts(
+                currency: 'Ksh',
+                amount: '29812',
+                cents: '34',
+                bankaccount: 'Equity Bank',
+              ),
               SizedBox(width: 10),
-              Accounts(),
+              Accounts(
+                currency: 'Ksh',
+                amount: '212',
+                cents: '09',
+                bankaccount: 'KCB Bank',
+              ),
               SizedBox(width: 10),
-              Accounts(),
+              Accounts(
+                currency: '\$',
+                amount: '2812',
+                cents: '34',
+                bankaccount: 'Western Union',
+              ),
               SizedBox(width: 10),
             ],
           ),
@@ -32,6 +47,13 @@ class WalletAccountContainer extends StatelessWidget {
 }
 
 class Accounts extends StatelessWidget {
+  final String currency;
+  final String amount;
+  final String cents;
+  final String bankaccount;
+
+  const Accounts({Key key, this.currency, this.amount, this.cents, this.bankaccount}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -82,20 +104,20 @@ class Accounts extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(8.0, 0, 0, 0),
                     child: Text(
-                      '\$',
+                      currency,
                       style: AppColors.kFontDollarStyle,
                     ),
                   ),
                 ),
                 Container(
                   child: Text(
-                    '8923.',
+                    amount,
                     style: AppColors.kFontAccountFigStyle,
                   ),
                 ),
                 Container(
                   child: Text(
-                    '68',
+                    cents,
                     style: AppColors.kFontDollarStyle,
                   ),
                 ),
@@ -108,7 +130,7 @@ class Accounts extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Paypal Account',
+                    bankaccount,
                     style: AppColors.kFontStyle,
                   ),
                 )

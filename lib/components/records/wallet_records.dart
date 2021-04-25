@@ -124,10 +124,10 @@ class _ExpensesTab extends StatelessWidget {
             isTrailing: true,
             isImage: true,
             isText: true,
-            subtitle: 'Bill & Debt',
-            title: 'Electricity',
+            subtitle: 'Trans ID: s@#R4354%#%!',
+            title: 'Music Sub.',
             onPressed: () {},
-            text: '-\$121.36',
+            text: 'Ksh -121.36',
             image: Image.asset('assets/images/apple.png'),
           );
         },
@@ -163,7 +163,7 @@ class _EarningsTab extends StatelessWidget {
             subtitle: 'Music & Entertainment',
             title: 'Shazam Reward',
             onPressed: () {},
-            text: '\$121.36',
+            text: 'Ksh +121.36',
             image: Image.asset('assets/images/shazam.png'),
           );
         },

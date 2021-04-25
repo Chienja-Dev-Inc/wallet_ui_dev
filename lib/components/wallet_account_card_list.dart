@@ -107,14 +107,18 @@ class _WalletAccountListContainerState
                                       AppColors.gradienBalanceContainerColors,
                                 ),
                               ),
-                              cardNetworkType: CardUtility.getCardTypeDisplay(creditCards[index].cardNetworkType),
+                              cardNetworkType: CardUtility.getCardTypeDisplay(
+                                  creditCards[index].cardNetworkType),
                               cardHolderName: creditCards[index].cardHolderName,
                               cardNumber: creditCards[index].cardNumber,
-                              company: CardUtility.getCardCompany(creditCards[index].company),
+                              company: CardUtility.getCardCompany(
+                                  creditCards[index].company),
                               validity: Validity(
-                                validThruMonth: creditCards[index].validThruMonth,
+                                validThruMonth:
+                                    creditCards[index].validThruMonth,
                                 validThruYear: creditCards[index].validThruYear,
-                                validFromMonth: creditCards[index].validFromMonth,
+                                validFromMonth:
+                                    creditCards[index].validFromMonth,
                                 validFromYear: creditCards[index].validFromYear,
                               ),
                             );
@@ -137,10 +141,11 @@ class _WalletAccountListContainerState
                                   width: 6,
                                   margin: EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: _current == index
-                                          ? Color(0xFF2F93B1)
-                                          : Color(0xFF7A93B1)),
+                                    shape: BoxShape.circle,
+                                    color: _current == index
+                                        ? Color(0xFF2F93B1)
+                                        : Color(0xFF7A93B1),
+                                  ),
                                 );
                               },
                             ),

@@ -61,7 +61,7 @@ class WalletBalanceContainer extends StatelessWidget {
                       children: [
                         Container(
                           child: Text(
-                            '\$',
+                            'Ksh',
                             style: AppColors.kFontDollarStyle,
                           ),
                         ),
