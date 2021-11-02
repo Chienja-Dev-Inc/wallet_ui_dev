@@ -78,7 +78,7 @@ class _WalletBottomNavigationState extends State<WalletBottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 64,
+      // height: 40,
       decoration: BoxDecoration(
         color: Colors.indigoAccent,
         boxShadow: AppColors.neumorpShadow,
