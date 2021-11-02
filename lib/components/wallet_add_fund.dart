@@ -29,7 +29,7 @@ class WalletAddFund extends StatelessWidget {
           return SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Container(
-              height: 900,
+              height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                 gradient: RadialGradient(
                   colors: AppColors.gradienColors,

@@ -11,34 +11,48 @@ class WalletAccountContainer extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          height: 180,
+          height: 200,
+          padding: EdgeInsets.all(10),
+          decoration: AppColors.kBoxDecorations,
           margin: EdgeInsets.symmetric(horizontal: width / 40),
           child: ListView(
             scrollDirection: Axis.horizontal,
-            children: [
-              SizedBox(width: 10),
-              Accounts(
-                currency: 'Ksh',
-                amount: '29812',
-                cents: '34',
-                bankaccount: 'Equity Bank',
-              ),
-              SizedBox(width: 10),
-              Accounts(
-                currency: 'Ksh',
-                amount: '212',
-                cents: '09',
-                bankaccount: 'KCB Bank',
-              ),
-              SizedBox(width: 10),
-              Accounts(
-                currency: '\$',
-                amount: '2812',
-                cents: '34',
-                bankaccount: 'Western Union',
-              ),
-              SizedBox(width: 10),
-            ],
+            children:  List.generate(8, (index) =>  Container(
+              padding: EdgeInsets.only(left: 10, right: 10),
+              child: Accounts(
+                  currency: 'Ksh',
+                  amount: '298$index',
+                  cents: '34',
+                  bankaccount: 'Equity Bank',
+                ),
+            ),),
+
+            // [
+            //   SizedBox(width: 10),
+            //   List.generate(18, (index) => Container()),
+            //   Accounts(
+            //     currency: 'Ksh',
+            //     amount: '29812',
+            //     cents: '34',
+            //     bankaccount: 'Equity Bank',
+            //   ),
+            //   SizedBox(width: 10),
+            //   Accounts(
+            //     currency: 'Ksh',
+            //     amount: '212',
+            //     cents: '09',
+            //     bankaccount: 'KCB Bank',
+            //   ),
+            //   SizedBox(width: 10),
+            //   Accounts(
+            //     currency: '\$',
+            //     amount: '2812',
+            //     cents: '34',
+            //     bankaccount: 'Western Union',
+            //   ),
+            //   SizedBox(width: 10),
+            // ],
+
           ),
         ),
       ],
@@ -58,7 +72,7 @@ class Accounts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 150,
-      width: 140,
+      width: 160,
       padding: EdgeInsets.all(1),
       decoration: BoxDecoration(
         boxShadow: AppColors.neumorpShadow,
@@ -73,6 +87,7 @@ class Accounts extends StatelessWidget {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Expanded(
                   child: CircleAvatar(

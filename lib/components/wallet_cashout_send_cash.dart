@@ -50,7 +50,7 @@ class SendMoney extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(25.0),
                   child: Container(
-                    height: width / 6,
+                    height: width / 10,
                     width: width / 6,
                     decoration: BoxDecoration(
                       color: AppColors.primaryWhite,
@@ -134,7 +134,7 @@ class RequestMoney extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(25.0),
                   child: Container(
-                    height: width / 6,
+                    height: width / 10,
                     width: width / 6,
                     decoration: BoxDecoration(
                         color: AppColors.primaryWhite,

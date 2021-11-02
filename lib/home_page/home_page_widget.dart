@@ -21,7 +21,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
               child: Container(
-                height: 800,
+                height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
             gradient: RadialGradient(
               colors: [

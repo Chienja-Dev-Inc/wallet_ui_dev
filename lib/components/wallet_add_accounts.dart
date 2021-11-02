@@ -41,7 +41,7 @@ class WalletAddAccountContainer extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                             builder: (context) => WalletSideBar())),
-                    title: 'Accounts',
+                    title: 'Accounts.',
                     icon: Icon(
                       Icons.add,
                       color: Colors.white,

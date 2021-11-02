@@ -25,7 +25,6 @@ class WalletDashBoard extends StatelessWidget {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          // height: 1500,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: AppColors.gradienColors,

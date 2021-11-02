@@ -145,7 +145,7 @@ class WalletSideBar extends StatelessWidget {
                   ),
                   child: Padding(
                     padding: AppColors.navPading,
-                    child: Text('Accounts', style: AppColors.kFontNavStyle),
+                    child: Text('Accounts.', style: AppColors.kFontNavStyle),
                   ),
                 ),
                 Padding(
