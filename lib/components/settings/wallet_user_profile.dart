@@ -475,11 +475,15 @@ class _UserProfileTab extends StatelessWidget {
           ),
           Row(
             children: [
-              Padding(
-                padding: AppColors.profilePading,
-                child: Text(
-                  " Lorem ipsum dolor sit amet \nconsectetur adipisicing elit. \nRepellat assumenda accusamus animi\n quasi maiores ducimus autem\n reprehenderit! Temporibus\n reiciendis vitae quia similique\n ratione. Sint facilis ipsa magni\n delectus itaque quae quibusdam,\n explicabo nemo qui fugit. ",
-                  style: AppColors.kEmailProfileFontAccountFigStyle,
+              Expanded(
+                child: Padding(
+                  padding: AppColors.profilePading,
+                  child: Text(
+                    " Lorem ipsum dolor sit amet \nconsectetur adipisicing elit. \nRepellat assumenda accusamus animi\n quasi maiores ducimus autem\n reprehenderit! Temporibus\n reiciendis vitae quia similique\n ratione. Sint facilis ipsa magni\n delectus itaque quae quibusdam,\n explicabo nemo qui fugit. ",
+                    style: AppColors.kEmailProfileFontAccountFigStyle,
+                    overflow: TextOverflow.ellipsis,
+                    softWrap: true,
+                  ),
                 ),
               ),
             ],
